@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script>
+        function result()
+        {
+            var ele=document.getElementsByName("bird");
+            for(i=0;i,ele.length;i++)
+            {
+                if(ele[i].checked)
+            {
+                if(ele[i].value=="Peacock")
+                {
+                    document.getElementById("res").innerHTML="Correct";
+                }
+                else{
+                    document.getElementById("res").innerHTML="Incorrect"; 
+                    }
+            }
+            }
+        }
+    </script>
+</head>
+<body>
+  <center><h1>WELCOME TO QUIZ</h1></center> 
+  <center><h2>All Questions Carries Same Marks</h2></center> 
+ 
+
+</body> <h3>4.what is national bird of India?</h3>
+<input type="radio" name="bird" value="Parrot">Parrot<br>
+<input type="radio" name="bird" value="Blue bird">Blue bird<br>
+<input type="radio" name="bird" value="Peacock">Peacock<br>
+<input type="radio" name="bird" value="Pegion">Pegion<br>
+<input type="button" value="submit" onclick="result()">
+<div id="res"></div>
+</html>
